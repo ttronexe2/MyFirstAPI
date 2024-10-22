@@ -9,7 +9,7 @@
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
     "format": "prettier --write src",
-    "start": "node ./src/server.js"
+    "start": "node ./src/server.ts"
   },
   "repository": {
     "type": "git",
