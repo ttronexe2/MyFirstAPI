@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "node copyEJS.js",
-    "start": "node ./dist/server.ts",
+    "start": "node src/copyEJS.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "fs-extra": "^10.0.0"
   },
   "keywords": [],
   "author": "",
