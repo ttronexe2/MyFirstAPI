@@ -1,8 +1,9 @@
-const express = require('express');
-const app = express();
-const port = 3001;
+import express, { Request, Response } from 'express';
 
-const students = [
+const app = express();
+const port = 3000;
+
+const students: string[] = [
     "Adrià Baltrons",
     "Nil Marquez",
     "Joshua Abril",
@@ -17,7 +18,7 @@ const students = [
     "Nico Atletico"
 ];
 
-app.get('/class', (req, res) => {
+app.get('/class', (req: Request, res: Response) => {
     res.json({
         students: students,
         totalStudents: students.length
